@@ -1,23 +1,28 @@
 'use strict';
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+const LoveFilm = prompt('Какой ваш любимый фильм?', '');
 
-
-const personalMovieDB = {
-    count: numberOfFilms,
-    movies: {},
+const FelmsGetDB = {
+    love: LoveFilm,
+    movie: {},
     actors: {},
-    genres: [],
-    privat: false
+    time: {},
+    grade: {},
+    genre: [],
+    privt: false
 };
 
-const a = prompt('Один из последних просмотренных фильмов?', ''),
-      b = prompt('На сколько оцените его?', ''),
-      c = prompt('Один из последних просмотренных фильмов?', ''),
-      d = prompt('На сколько оцените его?', '');
+const a = prompt('Какой фильм вы смотрели недавно'),
+      b = prompt('Какой актер вам понравился?'),
+      c = prompt('Какова ваша оценка на филм?'),
+      d = prompt('Какой жанр фильма вам нравится?'),      
+      g = prompt('Продолжительность фильма?');
 
 
-      personalMovieDB.movies[a] = b;
-      personalMovieDB.movies[c] = d;
-
-      console.log(personalMovieDB);
+      FelmsGetDB.movie = a;
+      FelmsGetDB.actors = b;
+      FelmsGetDB.grade = c;
+      FelmsGetDB.genre = d;
+      FelmsGetDB.time = g;
+      
+      console.log(FelmsGetDB);
